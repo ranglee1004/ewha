@@ -1,4 +1,4 @@
-# 모카와 동승 Android 시제품
+# 포우메이트 · PawMate Android 시제품
 
 웹 UI를 로컬 WebView로 실행하는 Kotlin Android 프로젝트입니다. 실제 Pleos SDK 연결은 아직 없습니다.
 
@@ -16,11 +16,11 @@ export MOCHA_PASSWORD_FILE="/private/password.txt"
 bash sign-release.sh
 ```
 
-서명 키 별칭은 `mocha-release`입니다. 키 파일과 비밀번호는 저장소에 올리지 마세요. APK 파일명에서 Ewha는 임시 팀명입니다.
+서명 키 별칭은 `mocha-release`입니다. 키 파일과 비밀번호는 저장소에 올리지 마세요. 팀명은 이차저차, 앱명은 PawMate입니다.
 
 ## 설치
 ```bash
-adb install -r ../../apk/Ewha_모카와동승_release.apk
+adb install -r ../../apk/이차저차_PawMate_release.apk
 adb shell am start -n kr.ewha.mocha/.MainActivity
 ```
 이전 설치본의 서명 키가 다르면 설치가 실패할 수 있습니다. 기존 앱 삭제 시 프로필과 기록도 삭제되므로 필요한 기록을 먼저 보관하세요.

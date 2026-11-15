@@ -9,7 +9,7 @@
 - ZIP 무결성 및 assets 4개 파일의 최신 소스 일치 확인
 - JavaScript 문법 검사 통과
 - 크기: 2106854 bytes
-- SHA-256: `0337b5d967d2d08da11502f5c817549f40763019e14c32b5b10fc21280fb1d51`
+- SHA-256: `630a30034048084c3682cc692e51c77cacd3bfbe25622363a28e6c39155b7879`
 
 ## 미검증
 Pleos Connect Emulator 설치·실행, 실제 기기 설치·실행, WebView 음성 재생과 클립보드 동작은 이 환경에서 검증하지 못했습니다. 위 검사는 실제 기기 실행 성공을 보증하지 않습니다.
@@ -21,4 +21,6 @@ Pleos Connect Emulator 설치·실행, 실제 기기 설치·실행, WebView 음
 4. 프로필·건강 기록을 저장하고 앱 재실행 후 유지되는지 확인합니다.
 5. 사용한 Pleos 에뮬레이터 버전과 화면 해상도를 루트 README에 기재합니다.
 
-Ewha는 임시 팀명입니다. 확정 팀명으로 APK 파일명과 README 경로를 함께 변경할 수 있습니다. 파일명 변경은 APK 서명에 영향을 주지 않습니다.
+팀명: 이차저차 / 앱명: 포우메이트 · PawMate. 기존 서명 키와 applicationId를 유지합니다.
+
+- 앱 표시명 PawMate, versionName 0.1.1 / versionCode 2로 재빌드 및 같은 키 서명 검증 완료.

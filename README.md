@@ -1,20 +1,24 @@
 # ewha
 
-## 모카와 동승
+## 포우메이트 · PawMate
+
+**팀명: 이차저차**
+
+Paw(발) + Mate(동행자): 반려동물의 이동을 함께 챙기는 파트너.
 반려동물과의 출발 준비부터 이동 중 관찰, 병원 방문 후 회복 귀가와 돌봄 기록까지 이어주는 차량용 펫 동승 시제품입니다.
 
 ## APK 다운로드
-[서명된 release APK](apk/Ewha_모카와동승_release.apk)
+[서명된 release APK](apk/이차저차_PawMate_release.apk)
 
-- 경로: `apk/Ewha_모카와동승_release.apk`
-- 버전: 0.1 (versionCode 1), 앱 ID: `kr.ewha.mocha`
-- Ewha는 임시 팀명입니다. 공모전 최종 팀명으로 파일명을 변경해 주세요.
+- 경로: `apk/이차저차_PawMate_release.apk`
+- 버전: 0.1.1 (versionCode 2), 앱 ID: `kr.ewha.mocha`
+- 팀명: 이차저차 / 앱명: 포우메이트 · PawMate
 
 ## 실행 방법
 Pleos Connect Emulator를 켠 뒤 Android SDK platform-tools의 adb로 설치합니다.
 
 ```bash
-adb install -r apk/Ewha_모카와동승_release.apk
+adb install -r apk/이차저차_PawMate_release.apk
 adb shell am start -n kr.ewha.mocha/.MainActivity
 ```
 

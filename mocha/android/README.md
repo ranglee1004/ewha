@@ -1,5 +1,28 @@
-# 모카와 동승 Android 프로젝트
-Android Studio에서 이 디렉터리를 열어 사용합니다. JDK 17, Android SDK 35, Gradle Wrapper 8.9가 필요합니다.
-Kotlin MainActivity가 assets에 있는 웹 화면을 WebView로 표시합니다. 최신 여행 케어, 병원 이동, 회복 귀가, 기록 화면을 포함합니다.
+# 모카와 동승 Android 시제품
 
-아직 Android 빌드, Pleos Emulator 실행 및 release APK 설치를 검증하지 않았습니다. 실제 Pleos SDK, 차량 상태, 음성 인식, 내비게이션 연동은 구현되지 않았습니다. 웹 브라우저에서 동작하는 기능도 Android WebView에서 별도 검증이 필요합니다.
+웹 UI를 로컬 WebView로 실행하는 Kotlin Android 프로젝트입니다. 실제 Pleos SDK 연결은 아직 없습니다.
+
+## 개발 실행
+Android Studio에서 이 폴더를 열고 Android SDK 35를 설치한 뒤 Gradle 동기화 후 Run으로 실행합니다. Gradle 8.9, Android Gradle Plugin 8.7.3, Kotlin 2.0.21, Java 바이트코드 17을 사용합니다.
+
+## release 빌드 및 서명
+`./gradlew assembleRelease`만 실행하면 **서명되지 않은** APK가 생성됩니다.
+Android Studio의 Build → Generate Signed Bundle / APK에서 APK와 release를 선택하여 개인 키로 서명하거나 아래 스크립트를 사용하세요.
+
+```bash
+export ANDROID_HOME="/your/android-sdk"
+export MOCHA_KEYSTORE="/private/mocha-release.jks"
+export MOCHA_PASSWORD_FILE="/private/password.txt"
+bash sign-release.sh
+```
+
+서명 키 별칭은 `mocha-release`입니다. 키 파일과 비밀번호는 저장소에 올리지 마세요. APK 파일명에서 Ewha는 임시 팀명입니다.
+
+## 설치
+```bash
+adb install -r ../../apk/Ewha_모카와동승_release.apk
+adb shell am start -n kr.ewha.mocha/.MainActivity
+```
+이전 설치본의 서명 키가 다르면 설치가 실패할 수 있습니다. 기존 앱 삭제 시 프로필과 기록도 삭제되므로 필요한 기록을 먼저 보관하세요.
+
+Pleos 설치·실행 검증 상태는 저장소 루트 README와 apk/VALIDATION.md를 확인하세요.

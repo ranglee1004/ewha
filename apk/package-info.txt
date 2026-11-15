@@ -1,0 +1,16 @@
+package: name='kr.ewha.mocha' versionCode='1' versionName='0.1' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+sdkVersion:'28'
+targetSdkVersion:'34'
+application: label='' icon=''
+launchable-activity: name='kr.ewha.mocha.MainActivity'  label='' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.type.automotive'
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.screen.landscape'
+  uses-implied-feature: name='android.hardware.screen.landscape' reason='one or more activities have specified a landscape orientation'
+main
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales:
+densities:

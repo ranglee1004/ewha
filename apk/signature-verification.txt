@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Mocha Competition App, OU=App Development, O=Mocha Team, C=KR
+Signer #1 certificate SHA-256 digest: ae04fcdf853dd08c418d3d93576226c03ab397b6510e64d440c13c90c0008b66
+Signer #1 certificate SHA-1 digest: 17ce846d2f4c615492d91dd0229201e7767c585e
+Signer #1 certificate MD5 digest: 3cf4b3f5fe3c22d4dd08a695ebac1d34
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: cff327b1e7222ee468d631b9e6654f621290573f178a41270bb7f64b93297d1a
+Signer #1 public key SHA-1 digest: 05e9b9ac2225d1f1ff9cd0bd1adece128ab6290c
+Signer #1 public key MD5 digest: 3d5fac3f1d76376e43e61d1cbd9ab715
